@@ -1,0 +1,12 @@
+{
+  "name": "game",
+  "version": "1.0",
+  "main": "index.html",
+  "window": {
+    "title": "",
+    "width": 800,
+    "height": 600,
+    "toolbar": false,
+    "icon": "assets/icon.png"
+  }
+}
