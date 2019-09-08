@@ -1,4 +1,4 @@
-# revenge-phaser
+# phaser-game-template
 
 ## Usage
 
