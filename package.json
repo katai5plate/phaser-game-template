@@ -16,7 +16,7 @@
     "package": "webpack",
     "watch": "webpack --watch",
     "live": "live-server",
-    "electron": "node electron ./export/src/electron.js",
+    "electron": "electron ./export/src/electron.js",
     "....................": "",
     "pre": "run-s pre:*",
     "pre:mkdirp": "shx mkdir -p ./lib",
