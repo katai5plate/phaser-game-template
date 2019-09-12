@@ -16,6 +16,7 @@
     "package": "webpack",
     "watch": "webpack --watch",
     "live": "live-server",
+    "__TRASH__electron": "electron ./export/src/electron.js",
     "....................": "",
     "pre": "run-s pre:*",
     "pre:mkdirp": "shx mkdir -p ./lib",
@@ -26,11 +27,9 @@
     "deploy:cp-root": "cpx ./index.html ./export/src",
     "deploy:cp-meta": "cpx \"./{assets,lib}/**/*.*\" ./export/src",
     "deploy:web-zip": "bestzip ./export/web.zip ./export/src",
+    "__TRASH__deploy:elect-init": "cpx \"./generator/electron/*.*/\" ./export/src",
     "deploy:nw-init": "cpx \"./generator/nwjs/*.*/\" ./export/src",
-    "deploy:nw-build-win": "nw-builder -o ./export/dist/win -p win64 ./export/src",
-    "......!TRASH!.......": "",
-    "electron": "electron ./export/src/electron.js",
-    "deploy:elect-init": "cpx \"./generator/electron/*.*/\" ./export/src"
+    "deploy:nw-build-win": "nw-builder -o ./export/dist/win -p win64 ./export/src"
   },
   "repository": {
     "type": "git",
