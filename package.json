@@ -1,5 +1,5 @@
 {
-  "main": "index.js",
+  "main": "export/src/electron.js",
   "name": "the-game",
   "description": "The Game",
   "version": "1.0.0",

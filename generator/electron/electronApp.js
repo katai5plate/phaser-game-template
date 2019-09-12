@@ -24,7 +24,7 @@ module.exports = class App {
   }
   create() {
     this.mainWindow = new BrowserWindow(this.windowOptions);
-    this.mainWindow.loadURL(this.mainURL);
+    this.mainWindow.loadFile(this.mainURL);
     this.mainWindow.on('closed', () => {
       this.mainWindow = null;
     });
