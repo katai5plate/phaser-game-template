@@ -63,3 +63,5 @@ typings/
 # this project
 lib
 export
+dist
+index.html

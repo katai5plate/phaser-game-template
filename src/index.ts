@@ -1,20 +1,19 @@
-/// <reference path="../node_modules/phaser/types/phaser.d.ts"/>
-
 import HelloScene from "./Scene/HelloScene"
+import { width, height } from "../metaConfig.json"
 
 const config: Phaser.Types.Core.GameConfig = {
-    type: Phaser.AUTO,
-    width: 800,
-    height: 600,
-    physics: {
-        default: 'arcade',
-        arcade: {
-            gravity: { y: 200 }
-        }
-    },
-    scene: [HelloScene]
+  type: Phaser.AUTO,
+  width,
+  height,
+  physics: {
+    default: 'arcade',
+    arcade: {
+      gravity: { y: 200 }
+    }
+  },
+  scene: [HelloScene]
 };
 
 window.onload = () => {
-    const game = new Phaser.Game(config);
+  new Phaser.Game(config);
 };
