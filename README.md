@@ -11,9 +11,8 @@ npm run deploy
 ```
 
 - WEB ビルド後のゲームは `./export/web.zip` に置かれる
-- Windows / Linux ビルド後のゲームは `./export/` に ZIP で置かれる
-- Mac ビルド後のゲームは`./export/dist/pc/osx64`にある
-  - Windows では Mac 版だけなぜか zip 化されない。理由は後述。原因分かる人募集中。
+- Windows / Mac / Linux ビルド後のゲームは `./export/dist` に置かれる
+  - 圧縮してない理由は後述。原因分かる人募集中。
 
 ## 開発にあたっての注意
 
@@ -36,4 +35,7 @@ this.load.image('red', './assets/img/red.png');
 * 最初は Electron で PC デプロイしようと思ったが、思うようにビルドできない
   - なので NW.js にした。一応 `feat/electron` に挑戦の軌跡を残してある
 * デプロイした MAC ビルドがなぜか Windows で zip 圧縮できない
-  - それぞれ圧縮失敗したら圧縮をやめる仕様にした
+  - 一旦暫定で PC 版の圧縮をそもそもやめた
+* Windows で nwbuild の MAC ビルドをすると、以下のようなエラーが出る
+  - `Error: EPERM: operation not permitted, stat 'node_modules\nw-builder\cache\0.41.1-sdk\osx64\nwjs.app\Contents\Frameworks\nwjs Framework.framework\Helpers'`
+  - nwbuild を入れなおすと出てこなくなる。

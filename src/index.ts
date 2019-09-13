@@ -1,9 +1,10 @@
 import HelloScene from "./Scene/HelloScene"
+import { width, height } from "../metaConfig.json"
 
 const config: Phaser.Types.Core.GameConfig = {
   type: Phaser.AUTO,
-  width: 800,
-  height: 600,
+  width,
+  height,
   physics: {
     default: 'arcade',
     arcade: {
