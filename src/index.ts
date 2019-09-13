@@ -1,5 +1,3 @@
-/// <reference path="../node_modules/phaser/types/phaser.d.ts"/>
-
 import HelloScene from "./Scene/HelloScene"
 
 const config: Phaser.Types.Core.GameConfig = {

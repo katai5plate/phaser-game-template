@@ -23,7 +23,7 @@
     "pre:engine": "shx cp ./node_modules/phaser/dist/phaser-arcade-physics.min.js ./lib/engine.js",
     ",...................": "",
     "deploy": "run-s deploy:*",
-    "deploy:rm": "shx rm -rf ./export",
+    "deploy:rm": "rimraf ./export ./dir",
     "deploy:cp-root": "cpx ./index.html ./export/src",
     "deploy:cp-meta": "cpx \"./{assets,lib}/**/*.*\" ./export/src",
     "deploy:web-zip": "bestzip ./export/web.zip ./export/src",
