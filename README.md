@@ -7,7 +7,7 @@ npm i
 npm run dev
 
 // 管理者権限で
-npm run deploy
+npm run build
 ```
 
 - WEB ビルド後のゲームは `./export/web.zip` に置かれる

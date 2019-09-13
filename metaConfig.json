@@ -2,7 +2,7 @@
   "title": "This is my GAME!",
   "width": 800,
   "height": 600,
-  "icon": "./assets/img/icon.ico",
+  "icon": "./assets/img/favicon.ico",
   "backgound_color": "#000000",
   "fit_width": false,
   "fit_height": true
