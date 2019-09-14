@@ -39,3 +39,8 @@ this.load.image('red', './assets/img/red.png');
 * Windows で nwbuild の MAC ビルドをすると、以下のようなエラーが出る
   - `Error: EPERM: operation not permitted, stat 'node_modules\nw-builder\cache\0.41.1-sdk\osx64\nwjs.app\Contents\Frameworks\nwjs Framework.framework\Helpers'`
   - nwbuild を入れなおすと出てこなくなる。
+
+## 開発中の機能
+
+- Cordova でスマホアプリデプロイ機能
+  - `feat/cordova` ブランチで進行中
