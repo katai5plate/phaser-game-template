@@ -28,6 +28,28 @@ this.load.image('logo', './assets/img/phaser3-logo.png');
 this.load.image('red', './assets/img/red.png');
 ```
 
+## スマホアプリのデプロイを行う
+
+1. PATH に JDK と Android Studio と gradle をインストールしておく
+
+```
+// Windows chocolatey 用のインストールコマンド
+cinst -y jdk8 androidstudio gradle
+// MacOSX homebrew 用のインストールコマンド
+brew cask install adoptopenjdk8 android-studio
+brew install gradle
+```
+
+2. 管理者権限で `npm run build` すると `./export/app` に cordova プロジェクトが生成される
+3. `cd ./export/app` 等でカレントディレクトリを移動し、以下を実行
+
+```
+npm i
+npm run init
+```
+
+4. そのあとは Cordova でアプリを作る方法に準拠して進める
+
 ## 既知の不具合
 
 - とりあえず関連 script は `__PENDING__` をつけた
