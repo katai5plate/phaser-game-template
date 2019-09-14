@@ -35,14 +35,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/katai5plate/revenge-phaser.git"
+    "url": "git+https://github.com/katai5plate/phaser-game-template.git"
   },
   "keywords": [],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/katai5plate/revenge-phaser/issues"
+    "url": "https://github.com/katai5plate/phaser-game-template/issues"
   },
-  "homepage": "https://github.com/katai5plate/revenge-phaser#readme",
+  "homepage": "https://github.com/katai5plate/phaser-game-template#readme",
   "devDependencies": {
     "bestzip": "^2.1.4",
     "cordova": "^9.0.0",
